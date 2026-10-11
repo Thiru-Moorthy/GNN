@@ -1,0 +1,7 @@
+{
+  "project_id": "pid-gnn-poc",
+  "run_id": "local-document-workflow",
+  "dataset_path": "data/processed/synthetic_graphs.jsonl",
+  "checkpoint_path": "artifacts/checkpoints/best_model.pt",
+  "report_path": "artifacts/reports/benchmark_report.md"
+}

@@ -1,0 +1,232 @@
+{
+  "nodes": [
+    {
+      "node_id": "doc-4a1483d14bef-p0001-pump-1",
+      "page_id": "doc-4a1483d14bef-p0001",
+      "node_type": "equipment",
+      "class_id": "pump",
+      "tag": "P-101",
+      "bbox": [
+        32.0,
+        96.0,
+        70.4,
+        132.0
+      ],
+      "center": [
+        51.2,
+        114.0
+      ],
+      "orientation": null,
+      "detection_confidence": 0.99,
+      "source_evidence": [
+        "doc-4a1483d14bef-p0001:demo_detection"
+      ],
+      "attributes": {},
+      "annotation_status": "synthetic"
+    },
+    {
+      "node_id": "doc-4a1483d14bef-p0001-valve-1",
+      "page_id": "doc-4a1483d14bef-p0001",
+      "node_type": "valve",
+      "class_id": "valve",
+      "tag": "V-101",
+      "bbox": [
+        124.80000000000001,
+        103.2,
+        144.0,
+        124.80000000000001
+      ],
+      "center": [
+        134.4,
+        114.0
+      ],
+      "orientation": null,
+      "detection_confidence": 0.99,
+      "source_evidence": [
+        "doc-4a1483d14bef-p0001:demo_detection"
+      ],
+      "attributes": {},
+      "annotation_status": "synthetic"
+    },
+    {
+      "node_id": "doc-4a1483d14bef-p0001-tank-1",
+      "page_id": "doc-4a1483d14bef-p0001",
+      "node_type": "equipment",
+      "class_id": "vessel",
+      "tag": "T-101",
+      "bbox": [
+        217.60000000000002,
+        84.0,
+        268.8,
+        144.0
+      ],
+      "center": [
+        243.20000000000002,
+        114.0
+      ],
+      "orientation": null,
+      "detection_confidence": 0.99,
+      "source_evidence": [
+        "doc-4a1483d14bef-p0001:demo_detection"
+      ],
+      "attributes": {},
+      "annotation_status": "synthetic"
+    },
+    {
+      "node_id": "doc-4a1483d14bef-p0001-inst-1",
+      "page_id": "doc-4a1483d14bef-p0001",
+      "node_type": "instrument",
+      "class_id": "instrument",
+      "tag": "PI-101",
+      "bbox": [
+        121.6,
+        43.199999999999996,
+        147.20000000000002,
+        64.80000000000001
+      ],
+      "center": [
+        134.4,
+        54.0
+      ],
+      "orientation": null,
+      "detection_confidence": 0.99,
+      "source_evidence": [
+        "doc-4a1483d14bef-p0001:demo_detection"
+      ],
+      "attributes": {},
+      "annotation_status": "synthetic"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "rel-edge-doc-4a1483d14bef-p0001-inst-1--doc-4a1483d14bef-p0001-pump-1",
+      "source_node_id": "doc-4a1483d14bef-p0001-inst-1",
+      "target_node_id": "doc-4a1483d14bef-p0001-pump-1",
+      "relation_type": "physical_pipe",
+      "validation_status": "REVIEW",
+      "validation_reasons": [
+        "ambiguous_probability=0.516_baseline=0.516"
+      ],
+      "evidence_references": [
+        "doc-4a1483d14bef-p0001-inst-1",
+        "doc-4a1483d14bef-p0001-pump-1"
+      ],
+      "model_version": "gnn-unavailable",
+      "rule_version": "rules-v1",
+      "reviewer_status": "pending",
+      "attributes": {
+        "baseline_score": 0.5160502519188269,
+        "gnn_probability": 0.5160502519188269
+      }
+    },
+    {
+      "relationship_id": "rel-edge-doc-4a1483d14bef-p0001-inst-1--doc-4a1483d14bef-p0001-tank-1",
+      "source_node_id": "doc-4a1483d14bef-p0001-inst-1",
+      "target_node_id": "doc-4a1483d14bef-p0001-tank-1",
+      "relation_type": "physical_pipe",
+      "validation_status": "REVIEW",
+      "validation_reasons": [
+        "ambiguous_probability=0.378_baseline=0.378"
+      ],
+      "evidence_references": [
+        "doc-4a1483d14bef-p0001-inst-1",
+        "doc-4a1483d14bef-p0001-tank-1"
+      ],
+      "model_version": "gnn-unavailable",
+      "rule_version": "rules-v1",
+      "reviewer_status": "pending",
+      "attributes": {
+        "baseline_score": 0.37773821831604676,
+        "gnn_probability": 0.37773821831604676
+      }
+    },
+    {
+      "relationship_id": "rel-edge-doc-4a1483d14bef-p0001-inst-1--doc-4a1483d14bef-p0001-valve-1",
+      "source_node_id": "doc-4a1483d14bef-p0001-inst-1",
+      "target_node_id": "doc-4a1483d14bef-p0001-valve-1",
+      "relation_type": "physical_pipe",
+      "validation_status": "REVIEW",
+      "validation_reasons": [
+        "ambiguous_probability=0.597_baseline=0.597"
+      ],
+      "evidence_references": [
+        "doc-4a1483d14bef-p0001-inst-1",
+        "doc-4a1483d14bef-p0001-valve-1"
+      ],
+      "model_version": "gnn-unavailable",
+      "rule_version": "rules-v1",
+      "reviewer_status": "pending",
+      "attributes": {
+        "baseline_score": 0.5966666666666667,
+        "gnn_probability": 0.5966666666666667
+      }
+    },
+    {
+      "relationship_id": "rel-edge-doc-4a1483d14bef-p0001-pump-1--doc-4a1483d14bef-p0001-tank-1",
+      "source_node_id": "doc-4a1483d14bef-p0001-pump-1",
+      "target_node_id": "doc-4a1483d14bef-p0001-tank-1",
+      "relation_type": "physical_pipe",
+      "validation_status": "REJECT",
+      "validation_reasons": [
+        "low_probability=0.246_baseline=0.246"
+      ],
+      "evidence_references": [
+        "doc-4a1483d14bef-p0001-pump-1",
+        "doc-4a1483d14bef-p0001-tank-1"
+      ],
+      "model_version": "gnn-unavailable",
+      "rule_version": "rules-v1",
+      "reviewer_status": "not_required",
+      "attributes": {
+        "baseline_score": 0.24555555555555555,
+        "gnn_probability": 0.24555555555555555
+      }
+    },
+    {
+      "relationship_id": "rel-edge-doc-4a1483d14bef-p0001-pump-1--doc-4a1483d14bef-p0001-valve-1",
+      "source_node_id": "doc-4a1483d14bef-p0001-pump-1",
+      "target_node_id": "doc-4a1483d14bef-p0001-valve-1",
+      "relation_type": "physical_pipe",
+      "validation_status": "REVIEW",
+      "validation_reasons": [
+        "ambiguous_probability=0.716_baseline=0.716"
+      ],
+      "evidence_references": [
+        "doc-4a1483d14bef-p0001-pump-1",
+        "doc-4a1483d14bef-p0001-valve-1"
+      ],
+      "model_version": "gnn-unavailable",
+      "rule_version": "rules-v1",
+      "reviewer_status": "pending",
+      "attributes": {
+        "baseline_score": 0.7164444444444443,
+        "gnn_probability": 0.7164444444444443
+      }
+    },
+    {
+      "relationship_id": "rel-edge-doc-4a1483d14bef-p0001-tank-1--doc-4a1483d14bef-p0001-valve-1",
+      "source_node_id": "doc-4a1483d14bef-p0001-tank-1",
+      "target_node_id": "doc-4a1483d14bef-p0001-valve-1",
+      "relation_type": "physical_pipe",
+      "validation_status": "REVIEW",
+      "validation_reasons": [
+        "ambiguous_probability=0.526_baseline=0.526"
+      ],
+      "evidence_references": [
+        "doc-4a1483d14bef-p0001-tank-1",
+        "doc-4a1483d14bef-p0001-valve-1"
+      ],
+      "model_version": "gnn-unavailable",
+      "rule_version": "rules-v1",
+      "reviewer_status": "pending",
+      "attributes": {
+        "baseline_score": 0.5257777777777777,
+        "gnn_probability": 0.5257777777777777
+      }
+    }
+  ],
+  "metadata": {
+    "graph_backend": "json_networkx_compatible",
+    "accepted_relationships": 0
+  }
+}

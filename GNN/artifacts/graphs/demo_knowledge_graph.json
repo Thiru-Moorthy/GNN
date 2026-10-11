@@ -1,0 +1,240 @@
+{
+  "nodes": [
+    {
+      "node_id": "synthetic-doc-000-p0001-pump-1",
+      "page_id": "synthetic-doc-000-p0001",
+      "node_type": "equipment",
+      "class_id": "pump",
+      "tag": "P-101",
+      "bbox": [
+        100.0,
+        280.0,
+        220.0,
+        385.00000000000006
+      ],
+      "center": [
+        160.0,
+        332.5
+      ],
+      "orientation": null,
+      "detection_confidence": 0.99,
+      "source_evidence": [
+        "synthetic-doc-000-p0001:demo_detection"
+      ],
+      "attributes": {
+        "synthetic_document_index": 0
+      },
+      "annotation_status": "synthetic"
+    },
+    {
+      "node_id": "synthetic-doc-000-p0001-valve-1",
+      "page_id": "synthetic-doc-000-p0001",
+      "node_type": "valve",
+      "class_id": "valve",
+      "tag": "V-101",
+      "bbox": [
+        390.0,
+        301.0,
+        450.0,
+        364.0
+      ],
+      "center": [
+        420.0,
+        332.5
+      ],
+      "orientation": null,
+      "detection_confidence": 0.99,
+      "source_evidence": [
+        "synthetic-doc-000-p0001:demo_detection"
+      ],
+      "attributes": {
+        "synthetic_document_index": 0
+      },
+      "annotation_status": "synthetic"
+    },
+    {
+      "node_id": "synthetic-doc-000-p0001-tank-1",
+      "page_id": "synthetic-doc-000-p0001",
+      "node_type": "equipment",
+      "class_id": "vessel",
+      "tag": "T-101",
+      "bbox": [
+        680.0,
+        244.99999999999997,
+        840.0,
+        420.0
+      ],
+      "center": [
+        760.0,
+        332.5
+      ],
+      "orientation": null,
+      "detection_confidence": 0.99,
+      "source_evidence": [
+        "synthetic-doc-000-p0001:demo_detection"
+      ],
+      "attributes": {
+        "synthetic_document_index": 0
+      },
+      "annotation_status": "synthetic"
+    },
+    {
+      "node_id": "synthetic-doc-000-p0001-inst-1",
+      "page_id": "synthetic-doc-000-p0001",
+      "node_type": "instrument",
+      "class_id": "instrument",
+      "tag": "PI-101",
+      "bbox": [
+        380.0,
+        126.0,
+        460.0,
+        189.0
+      ],
+      "center": [
+        420.0,
+        157.5
+      ],
+      "orientation": null,
+      "detection_confidence": 0.99,
+      "source_evidence": [
+        "synthetic-doc-000-p0001:demo_detection"
+      ],
+      "attributes": {
+        "synthetic_document_index": 0
+      },
+      "annotation_status": "synthetic"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "rel-edge-synthetic-doc-000-p0001-inst-1--synthetic-doc-000-p0001-pump-1",
+      "source_node_id": "synthetic-doc-000-p0001-inst-1",
+      "target_node_id": "synthetic-doc-000-p0001-pump-1",
+      "relation_type": "physical_pipe",
+      "validation_status": "REJECT",
+      "validation_reasons": [
+        "low_probability=0.320_baseline=0.320"
+      ],
+      "evidence_references": [
+        "synthetic-doc-000-p0001-inst-1",
+        "synthetic-doc-000-p0001-pump-1"
+      ],
+      "model_version": "gnn-unavailable",
+      "rule_version": "rules-v1",
+      "reviewer_status": "not_required",
+      "attributes": {
+        "baseline_score": 0.3200253628620895,
+        "gnn_probability": 0.3200253628620895
+      }
+    },
+    {
+      "relationship_id": "rel-edge-synthetic-doc-000-p0001-inst-1--synthetic-doc-000-p0001-tank-1",
+      "source_node_id": "synthetic-doc-000-p0001-inst-1",
+      "target_node_id": "synthetic-doc-000-p0001-tank-1",
+      "relation_type": "physical_pipe",
+      "validation_status": "REJECT",
+      "validation_reasons": [
+        "low_probability=0.252_baseline=0.252"
+      ],
+      "evidence_references": [
+        "synthetic-doc-000-p0001-inst-1",
+        "synthetic-doc-000-p0001-tank-1"
+      ],
+      "model_version": "gnn-unavailable",
+      "rule_version": "rules-v1",
+      "reviewer_status": "not_required",
+      "attributes": {
+        "baseline_score": 0.2522229812921716,
+        "gnn_probability": 0.2522229812921716
+      }
+    },
+    {
+      "relationship_id": "rel-edge-synthetic-doc-000-p0001-inst-1--synthetic-doc-000-p0001-valve-1",
+      "source_node_id": "synthetic-doc-000-p0001-inst-1",
+      "target_node_id": "synthetic-doc-000-p0001-valve-1",
+      "relation_type": "physical_pipe",
+      "validation_status": "REVIEW",
+      "validation_reasons": [
+        "ambiguous_probability=0.446_baseline=0.446"
+      ],
+      "evidence_references": [
+        "synthetic-doc-000-p0001-inst-1",
+        "synthetic-doc-000-p0001-valve-1"
+      ],
+      "model_version": "gnn-unavailable",
+      "rule_version": "rules-v1",
+      "reviewer_status": "pending",
+      "attributes": {
+        "baseline_score": 0.4458333333333333,
+        "gnn_probability": 0.4458333333333333
+      }
+    },
+    {
+      "relationship_id": "rel-edge-synthetic-doc-000-p0001-pump-1--synthetic-doc-000-p0001-tank-1",
+      "source_node_id": "synthetic-doc-000-p0001-pump-1",
+      "target_node_id": "synthetic-doc-000-p0001-tank-1",
+      "relation_type": "physical_pipe",
+      "validation_status": "REJECT",
+      "validation_reasons": [
+        "low_probability=0.200_baseline=0.200"
+      ],
+      "evidence_references": [
+        "synthetic-doc-000-p0001-pump-1",
+        "synthetic-doc-000-p0001-tank-1"
+      ],
+      "model_version": "gnn-unavailable",
+      "rule_version": "rules-v1",
+      "reviewer_status": "not_required",
+      "attributes": {
+        "baseline_score": 0.2,
+        "gnn_probability": 0.2
+      }
+    },
+    {
+      "relationship_id": "rel-edge-synthetic-doc-000-p0001-pump-1--synthetic-doc-000-p0001-valve-1",
+      "source_node_id": "synthetic-doc-000-p0001-pump-1",
+      "target_node_id": "synthetic-doc-000-p0001-valve-1",
+      "relation_type": "physical_pipe",
+      "validation_status": "REVIEW",
+      "validation_reasons": [
+        "ambiguous_probability=0.520_baseline=0.520"
+      ],
+      "evidence_references": [
+        "synthetic-doc-000-p0001-pump-1",
+        "synthetic-doc-000-p0001-valve-1"
+      ],
+      "model_version": "gnn-unavailable",
+      "rule_version": "rules-v1",
+      "reviewer_status": "pending",
+      "attributes": {
+        "baseline_score": 0.5202380952380952,
+        "gnn_probability": 0.5202380952380952
+      }
+    },
+    {
+      "relationship_id": "rel-edge-synthetic-doc-000-p0001-tank-1--synthetic-doc-000-p0001-valve-1",
+      "source_node_id": "synthetic-doc-000-p0001-tank-1",
+      "target_node_id": "synthetic-doc-000-p0001-valve-1",
+      "relation_type": "physical_pipe",
+      "validation_status": "REVIEW",
+      "validation_reasons": [
+        "ambiguous_probability=0.399_baseline=0.399"
+      ],
+      "evidence_references": [
+        "synthetic-doc-000-p0001-tank-1",
+        "synthetic-doc-000-p0001-valve-1"
+      ],
+      "model_version": "gnn-unavailable",
+      "rule_version": "rules-v1",
+      "reviewer_status": "pending",
+      "attributes": {
+        "baseline_score": 0.39880952380952384,
+        "gnn_probability": 0.39880952380952384
+      }
+    }
+  ],
+  "metadata": {
+    "graph_backend": "json_networkx_compatible",
+    "accepted_relationships": 0
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "project_id": "pid-gnn-poc",
+  "run_id": "synthetic-train",
+  "dataset_path": "data/processed/synthetic_graphs.jsonl",
+  "checkpoint_path": "artifacts/checkpoints/best_model.pt",
+  "report_path": "artifacts/reports/benchmark_report.md",
+  "candidates": {
+    "max_distance_px": 180.0,
+    "hard_negative_distance_px": 700.0,
+    "require_same_page": true
+  },
+  "baseline": {
+    "accept_threshold": 0.65,
+    "review_threshold": 0.4,
+    "max_distance_px": 420.0
+  },
+  "model": {
+    "hidden_dim": 128,
+    "dropout": 0.2,
+    "learning_rate": 0.005,
+    "epochs": 25,
+    "patience": 6,
+    "batch_seed": 42,
+    "threshold": 0.5,
+    "device": "auto"
+  },
+  "validation": {
+    "accept_probability": 0.72,
+    "review_probability": 0.35,
+    "min_baseline_for_accept": 0.35
+  }
+}

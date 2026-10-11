@@ -1,0 +1,39 @@
+# P&ID GNN Connectivity Benchmark
+
+Dataset type: synthetic demo
+
+These metrics are computed only from explicit connected/not_connected labels. Ambiguous and unlabeled edges are excluded.
+
+## Summary
+
+### geometry_baseline
+- precision: `1.0`
+- recall: `0.5`
+- f1: `0.6666666666666666`
+- confusion_matrix: `[[8, 0], [8, 8]]`
+
+### gnn
+- precision: `1.0`
+- recall: `0.5`
+- f1: `0.6666666666666666`
+- confusion_matrix: `[[8, 0], [8, 8]]`
+
+### gnn_plus_validation
+- precision: `1.0`
+- recall: `0.5`
+- f1: `0.6666666666666666`
+- confusion_matrix: `[[8, 0], [8, 8]]`
+
+## Counts
+
+- documents: `8`
+- candidate_edges: `48`
+- connected: `16`
+- not_connected: `8`
+- ambiguous: `9`
+- unlabeled: `15`
+
+## Limitations
+
+- Synthetic results do not represent real P&ID performance.
+- Real benchmarking requires verified annotated P&ID candidate edges.

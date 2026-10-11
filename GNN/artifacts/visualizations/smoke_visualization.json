@@ -1,0 +1,492 @@
+{
+  "legend": {
+    "candidate": "gray dashed",
+    "accepted": "green solid",
+    "review": "orange dotted",
+    "rejected": "red faded"
+  },
+  "nodes": [
+    {
+      "node_id": "doc-4a1483d14bef-p0001-pump-1",
+      "page_id": "doc-4a1483d14bef-p0001",
+      "node_type": "equipment",
+      "class_id": "pump",
+      "tag": "P-101",
+      "bbox": [
+        32.0,
+        96.0,
+        70.4,
+        132.0
+      ],
+      "center": [
+        51.2,
+        114.0
+      ],
+      "orientation": null,
+      "detection_confidence": 0.99,
+      "source_evidence": [
+        "doc-4a1483d14bef-p0001:demo_detection"
+      ],
+      "attributes": {},
+      "annotation_status": "synthetic"
+    },
+    {
+      "node_id": "doc-4a1483d14bef-p0001-valve-1",
+      "page_id": "doc-4a1483d14bef-p0001",
+      "node_type": "valve",
+      "class_id": "valve",
+      "tag": "V-101",
+      "bbox": [
+        124.80000000000001,
+        103.2,
+        144.0,
+        124.80000000000001
+      ],
+      "center": [
+        134.4,
+        114.0
+      ],
+      "orientation": null,
+      "detection_confidence": 0.99,
+      "source_evidence": [
+        "doc-4a1483d14bef-p0001:demo_detection"
+      ],
+      "attributes": {},
+      "annotation_status": "synthetic"
+    },
+    {
+      "node_id": "doc-4a1483d14bef-p0001-tank-1",
+      "page_id": "doc-4a1483d14bef-p0001",
+      "node_type": "equipment",
+      "class_id": "vessel",
+      "tag": "T-101",
+      "bbox": [
+        217.60000000000002,
+        84.0,
+        268.8,
+        144.0
+      ],
+      "center": [
+        243.20000000000002,
+        114.0
+      ],
+      "orientation": null,
+      "detection_confidence": 0.99,
+      "source_evidence": [
+        "doc-4a1483d14bef-p0001:demo_detection"
+      ],
+      "attributes": {},
+      "annotation_status": "synthetic"
+    },
+    {
+      "node_id": "doc-4a1483d14bef-p0001-inst-1",
+      "page_id": "doc-4a1483d14bef-p0001",
+      "node_type": "instrument",
+      "class_id": "instrument",
+      "tag": "PI-101",
+      "bbox": [
+        121.6,
+        43.199999999999996,
+        147.20000000000002,
+        64.80000000000001
+      ],
+      "center": [
+        134.4,
+        54.0
+      ],
+      "orientation": null,
+      "detection_confidence": 0.99,
+      "source_evidence": [
+        "doc-4a1483d14bef-p0001:demo_detection"
+      ],
+      "attributes": {},
+      "annotation_status": "synthetic"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "edge-doc-4a1483d14bef-p0001-inst-1--doc-4a1483d14bef-p0001-pump-1",
+      "source_node_id": "doc-4a1483d14bef-p0001-inst-1",
+      "target_node_id": "doc-4a1483d14bef-p0001-pump-1",
+      "candidate_relation_type": "physical_pipe",
+      "geometric_features": {
+        "distance_norm": 0.2564449258612851,
+        "dx_norm": -0.26,
+        "dy_norm": 0.25,
+        "bbox_gap_norm": 0.14989329538041382,
+        "alignment_score": 0.27884615384615385,
+        "same_page": true,
+        "line_evidence": true,
+        "junction_evidence": false,
+        "source_confidence": 0.99,
+        "target_confidence": 0.99,
+        "distance_px": 102.57797034451403,
+        "bbox_gap_px": 59.95731815216553
+      },
+      "baseline_score": 0.5160502519188269,
+      "baseline_decision": "review",
+      "baseline_explanation": [
+        "distance_px=102.6",
+        "bbox_gap_px=60.0",
+        "alignment_score=0.28",
+        "line_evidence=True"
+      ],
+      "ground_truth_label": "unlabeled",
+      "label_status": "unlabeled",
+      "source_evidence": [
+        "doc-4a1483d14bef-p0001-inst-1",
+        "doc-4a1483d14bef-p0001-pump-1"
+      ],
+      "prediction": {
+        "edge_id": "edge-doc-4a1483d14bef-p0001-inst-1--doc-4a1483d14bef-p0001-pump-1",
+        "model_name": "baseline_fallback",
+        "model_version": "gnn-unavailable",
+        "probability": 0.5160502519188269,
+        "predicted_class": "connected",
+        "decision_status": "fallback",
+        "timestamp": "2026-10-11T21:42:41.011078Z"
+      },
+      "validation": {
+        "relationship_id": "rel-edge-doc-4a1483d14bef-p0001-inst-1--doc-4a1483d14bef-p0001-pump-1",
+        "source_node_id": "doc-4a1483d14bef-p0001-inst-1",
+        "target_node_id": "doc-4a1483d14bef-p0001-pump-1",
+        "relation_type": "physical_pipe",
+        "validation_status": "REVIEW",
+        "validation_reasons": [
+          "ambiguous_probability=0.516_baseline=0.516"
+        ],
+        "evidence_references": [
+          "doc-4a1483d14bef-p0001-inst-1",
+          "doc-4a1483d14bef-p0001-pump-1"
+        ],
+        "model_version": "gnn-unavailable",
+        "rule_version": "rules-v1",
+        "reviewer_status": "pending",
+        "attributes": {
+          "baseline_score": 0.5160502519188269,
+          "gnn_probability": 0.5160502519188269
+        }
+      }
+    },
+    {
+      "edge_id": "edge-doc-4a1483d14bef-p0001-inst-1--doc-4a1483d14bef-p0001-tank-1",
+      "source_node_id": "doc-4a1483d14bef-p0001-inst-1",
+      "target_node_id": "doc-4a1483d14bef-p0001-tank-1",
+      "candidate_relation_type": "physical_pipe",
+      "geometric_features": {
+        "distance_norm": 0.3106187373614155,
+        "dx_norm": 0.34,
+        "dy_norm": 0.25,
+        "bbox_gap_norm": 0.1824280680158621,
+        "alignment_score": 0.44852941176470595,
+        "same_page": true,
+        "line_evidence": false,
+        "junction_evidence": false,
+        "source_confidence": 0.99,
+        "target_confidence": 0.99,
+        "distance_px": 124.2474949445662,
+        "bbox_gap_px": 72.97122720634484
+      },
+      "baseline_score": 0.37773821831604676,
+      "baseline_decision": "not_connected",
+      "baseline_explanation": [
+        "distance_px=124.2",
+        "bbox_gap_px=73.0",
+        "alignment_score=0.45",
+        "line_evidence=False"
+      ],
+      "ground_truth_label": "unlabeled",
+      "label_status": "unlabeled",
+      "source_evidence": [
+        "doc-4a1483d14bef-p0001-inst-1",
+        "doc-4a1483d14bef-p0001-tank-1"
+      ],
+      "prediction": {
+        "edge_id": "edge-doc-4a1483d14bef-p0001-inst-1--doc-4a1483d14bef-p0001-tank-1",
+        "model_name": "baseline_fallback",
+        "model_version": "gnn-unavailable",
+        "probability": 0.37773821831604676,
+        "predicted_class": "not_connected",
+        "decision_status": "fallback",
+        "timestamp": "2026-10-11T21:42:41.011078Z"
+      },
+      "validation": {
+        "relationship_id": "rel-edge-doc-4a1483d14bef-p0001-inst-1--doc-4a1483d14bef-p0001-tank-1",
+        "source_node_id": "doc-4a1483d14bef-p0001-inst-1",
+        "target_node_id": "doc-4a1483d14bef-p0001-tank-1",
+        "relation_type": "physical_pipe",
+        "validation_status": "REVIEW",
+        "validation_reasons": [
+          "ambiguous_probability=0.378_baseline=0.378"
+        ],
+        "evidence_references": [
+          "doc-4a1483d14bef-p0001-inst-1",
+          "doc-4a1483d14bef-p0001-tank-1"
+        ],
+        "model_version": "gnn-unavailable",
+        "rule_version": "rules-v1",
+        "reviewer_status": "pending",
+        "attributes": {
+          "baseline_score": 0.37773821831604676,
+          "gnn_probability": 0.37773821831604676
+        }
+      }
+    },
+    {
+      "edge_id": "edge-doc-4a1483d14bef-p0001-inst-1--doc-4a1483d14bef-p0001-valve-1",
+      "source_node_id": "doc-4a1483d14bef-p0001-inst-1",
+      "target_node_id": "doc-4a1483d14bef-p0001-valve-1",
+      "candidate_relation_type": "physical_pipe",
+      "geometric_features": {
+        "distance_norm": 0.15,
+        "dx_norm": 0.0,
+        "dy_norm": 0.25,
+        "bbox_gap_norm": 0.09599999999999997,
+        "alignment_score": 0.0,
+        "same_page": true,
+        "line_evidence": true,
+        "junction_evidence": false,
+        "source_confidence": 0.99,
+        "target_confidence": 0.99,
+        "distance_px": 60.0,
+        "bbox_gap_px": 38.39999999999999
+      },
+      "baseline_score": 0.5966666666666667,
+      "baseline_decision": "review",
+      "baseline_explanation": [
+        "distance_px=60.0",
+        "bbox_gap_px=38.4",
+        "alignment_score=0.00",
+        "line_evidence=True"
+      ],
+      "ground_truth_label": "unlabeled",
+      "label_status": "unlabeled",
+      "source_evidence": [
+        "doc-4a1483d14bef-p0001-inst-1",
+        "doc-4a1483d14bef-p0001-valve-1"
+      ],
+      "prediction": {
+        "edge_id": "edge-doc-4a1483d14bef-p0001-inst-1--doc-4a1483d14bef-p0001-valve-1",
+        "model_name": "baseline_fallback",
+        "model_version": "gnn-unavailable",
+        "probability": 0.5966666666666667,
+        "predicted_class": "connected",
+        "decision_status": "fallback",
+        "timestamp": "2026-10-11T21:42:41.011078Z"
+      },
+      "validation": {
+        "relationship_id": "rel-edge-doc-4a1483d14bef-p0001-inst-1--doc-4a1483d14bef-p0001-valve-1",
+        "source_node_id": "doc-4a1483d14bef-p0001-inst-1",
+        "target_node_id": "doc-4a1483d14bef-p0001-valve-1",
+        "relation_type": "physical_pipe",
+        "validation_status": "REVIEW",
+        "validation_reasons": [
+          "ambiguous_probability=0.597_baseline=0.597"
+        ],
+        "evidence_references": [
+          "doc-4a1483d14bef-p0001-inst-1",
+          "doc-4a1483d14bef-p0001-valve-1"
+        ],
+        "model_version": "gnn-unavailable",
+        "rule_version": "rules-v1",
+        "reviewer_status": "pending",
+        "attributes": {
+          "baseline_score": 0.5966666666666667,
+          "gnn_probability": 0.5966666666666667
+        }
+      }
+    },
+    {
+      "edge_id": "edge-doc-4a1483d14bef-p0001-pump-1--doc-4a1483d14bef-p0001-tank-1",
+      "source_node_id": "doc-4a1483d14bef-p0001-pump-1",
+      "target_node_id": "doc-4a1483d14bef-p0001-tank-1",
+      "candidate_relation_type": "physical_pipe",
+      "geometric_features": {
+        "distance_norm": 0.48,
+        "dx_norm": 0.6,
+        "dy_norm": 0.0,
+        "bbox_gap_norm": 0.36800000000000005,
+        "alignment_score": 1.0,
+        "same_page": true,
+        "line_evidence": false,
+        "junction_evidence": false,
+        "source_confidence": 0.99,
+        "target_confidence": 0.99,
+        "distance_px": 192.0,
+        "bbox_gap_px": 147.20000000000002
+      },
+      "baseline_score": 0.24555555555555555,
+      "baseline_decision": "not_connected",
+      "baseline_explanation": [
+        "distance_px=192.0",
+        "bbox_gap_px=147.2",
+        "alignment_score=1.00",
+        "line_evidence=False"
+      ],
+      "ground_truth_label": "unlabeled",
+      "label_status": "unlabeled",
+      "source_evidence": [
+        "doc-4a1483d14bef-p0001-pump-1",
+        "doc-4a1483d14bef-p0001-tank-1"
+      ],
+      "prediction": {
+        "edge_id": "edge-doc-4a1483d14bef-p0001-pump-1--doc-4a1483d14bef-p0001-tank-1",
+        "model_name": "baseline_fallback",
+        "model_version": "gnn-unavailable",
+        "probability": 0.24555555555555555,
+        "predicted_class": "not_connected",
+        "decision_status": "fallback",
+        "timestamp": "2026-10-11T21:42:41.011078Z"
+      },
+      "validation": {
+        "relationship_id": "rel-edge-doc-4a1483d14bef-p0001-pump-1--doc-4a1483d14bef-p0001-tank-1",
+        "source_node_id": "doc-4a1483d14bef-p0001-pump-1",
+        "target_node_id": "doc-4a1483d14bef-p0001-tank-1",
+        "relation_type": "physical_pipe",
+        "validation_status": "REJECT",
+        "validation_reasons": [
+          "low_probability=0.246_baseline=0.246"
+        ],
+        "evidence_references": [
+          "doc-4a1483d14bef-p0001-pump-1",
+          "doc-4a1483d14bef-p0001-tank-1"
+        ],
+        "model_version": "gnn-unavailable",
+        "rule_version": "rules-v1",
+        "reviewer_status": "not_required",
+        "attributes": {
+          "baseline_score": 0.24555555555555555,
+          "gnn_probability": 0.24555555555555555
+        }
+      }
+    },
+    {
+      "edge_id": "edge-doc-4a1483d14bef-p0001-pump-1--doc-4a1483d14bef-p0001-valve-1",
+      "source_node_id": "doc-4a1483d14bef-p0001-pump-1",
+      "target_node_id": "doc-4a1483d14bef-p0001-valve-1",
+      "candidate_relation_type": "physical_pipe",
+      "geometric_features": {
+        "distance_norm": 0.20800000000000002,
+        "dx_norm": 0.26,
+        "dy_norm": 0.0,
+        "bbox_gap_norm": 0.136,
+        "alignment_score": 1.0,
+        "same_page": true,
+        "line_evidence": true,
+        "junction_evidence": false,
+        "source_confidence": 0.99,
+        "target_confidence": 0.99,
+        "distance_px": 83.2,
+        "bbox_gap_px": 54.400000000000006
+      },
+      "baseline_score": 0.7164444444444443,
+      "baseline_decision": "connected",
+      "baseline_explanation": [
+        "distance_px=83.2",
+        "bbox_gap_px=54.4",
+        "alignment_score=1.00",
+        "line_evidence=True"
+      ],
+      "ground_truth_label": "unlabeled",
+      "label_status": "unlabeled",
+      "source_evidence": [
+        "doc-4a1483d14bef-p0001-pump-1",
+        "doc-4a1483d14bef-p0001-valve-1"
+      ],
+      "prediction": {
+        "edge_id": "edge-doc-4a1483d14bef-p0001-pump-1--doc-4a1483d14bef-p0001-valve-1",
+        "model_name": "baseline_fallback",
+        "model_version": "gnn-unavailable",
+        "probability": 0.7164444444444443,
+        "predicted_class": "connected",
+        "decision_status": "fallback",
+        "timestamp": "2026-10-11T21:42:41.011078Z"
+      },
+      "validation": {
+        "relationship_id": "rel-edge-doc-4a1483d14bef-p0001-pump-1--doc-4a1483d14bef-p0001-valve-1",
+        "source_node_id": "doc-4a1483d14bef-p0001-pump-1",
+        "target_node_id": "doc-4a1483d14bef-p0001-valve-1",
+        "relation_type": "physical_pipe",
+        "validation_status": "REVIEW",
+        "validation_reasons": [
+          "ambiguous_probability=0.716_baseline=0.716"
+        ],
+        "evidence_references": [
+          "doc-4a1483d14bef-p0001-pump-1",
+          "doc-4a1483d14bef-p0001-valve-1"
+        ],
+        "model_version": "gnn-unavailable",
+        "rule_version": "rules-v1",
+        "reviewer_status": "pending",
+        "attributes": {
+          "baseline_score": 0.7164444444444443,
+          "gnn_probability": 0.7164444444444443
+        }
+      }
+    },
+    {
+      "edge_id": "edge-doc-4a1483d14bef-p0001-tank-1--doc-4a1483d14bef-p0001-valve-1",
+      "source_node_id": "doc-4a1483d14bef-p0001-tank-1",
+      "target_node_id": "doc-4a1483d14bef-p0001-valve-1",
+      "candidate_relation_type": "physical_pipe",
+      "geometric_features": {
+        "distance_norm": 0.272,
+        "dx_norm": -0.34,
+        "dy_norm": 0.0,
+        "bbox_gap_norm": 0.18400000000000005,
+        "alignment_score": 1.0,
+        "same_page": true,
+        "line_evidence": false,
+        "junction_evidence": false,
+        "source_confidence": 0.99,
+        "target_confidence": 0.99,
+        "distance_px": 108.80000000000001,
+        "bbox_gap_px": 73.60000000000002
+      },
+      "baseline_score": 0.5257777777777777,
+      "baseline_decision": "review",
+      "baseline_explanation": [
+        "distance_px=108.8",
+        "bbox_gap_px=73.6",
+        "alignment_score=1.00",
+        "line_evidence=False"
+      ],
+      "ground_truth_label": "unlabeled",
+      "label_status": "unlabeled",
+      "source_evidence": [
+        "doc-4a1483d14bef-p0001-tank-1",
+        "doc-4a1483d14bef-p0001-valve-1"
+      ],
+      "prediction": {
+        "edge_id": "edge-doc-4a1483d14bef-p0001-tank-1--doc-4a1483d14bef-p0001-valve-1",
+        "model_name": "baseline_fallback",
+        "model_version": "gnn-unavailable",
+        "probability": 0.5257777777777777,
+        "predicted_class": "connected",
+        "decision_status": "fallback",
+        "timestamp": "2026-10-11T21:42:41.011078Z"
+      },
+      "validation": {
+        "relationship_id": "rel-edge-doc-4a1483d14bef-p0001-tank-1--doc-4a1483d14bef-p0001-valve-1",
+        "source_node_id": "doc-4a1483d14bef-p0001-tank-1",
+        "target_node_id": "doc-4a1483d14bef-p0001-valve-1",
+        "relation_type": "physical_pipe",
+        "validation_status": "REVIEW",
+        "validation_reasons": [
+          "ambiguous_probability=0.526_baseline=0.526"
+        ],
+        "evidence_references": [
+          "doc-4a1483d14bef-p0001-tank-1",
+          "doc-4a1483d14bef-p0001-valve-1"
+        ],
+        "model_version": "gnn-unavailable",
+        "rule_version": "rules-v1",
+        "reviewer_status": "pending",
+        "attributes": {
+          "baseline_score": 0.5257777777777777,
+          "gnn_probability": 0.5257777777777777
+        }
+      }
+    }
+  ]
+}
